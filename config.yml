@@ -1,0 +1,132 @@
+# %player_name% - Works on 'Returning_Join_Message' and 'New_Join_Message' and 'Message_of_The_Day' and 'Quit_Message'
+# %total_players% - Works on 'New_Join_Message'
+# %killer% and %weapon% - works on Player Death Message
+# %killed% and %world% - works on all death messages
+# Help editing the config in game http://dev.bukkit.org/server-mods/joinmessages/pages/help/
+# StorageType Valid Types: file or mysql
+StorageType: file
+MySQL:
+  Host: localhost
+  Port: 3306
+  Username: root
+  Password: password
+  Database: legendarymessages
+  Table_Prefix: lm_
+MOTD:
+  Enabled: true
+  Message: '&6Tere tulemast StoneMain serveri!'
+New_Join_Message:
+  Enabled: true
+  Message: '&aTere, %player_name% !/n&d%total_players% mängijat on liitunud serveriga.'
+Returning_Join_Message:
+  Enabled: true
+  Message: '&2Tere tulemast tagasi, %player_name%!&aIgatsesin sind. :)'
+Quit_Message:
+  Enabled: true
+  Message: '&d%player_name% &cLahkus!'
+Kick_Message:
+  Enabled: false
+  Message: '&e%player_name% Lahkus'
+Death_Message:
+  Enabled: true
+  Messages:
+    Player: '&c%killed% &7tapeti &c%killer% &7poolt.'
+    Mobs:
+      Zombie:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      PigZombie:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      Skeleton:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      Creeper:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      Ghast:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      MagmaCube:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      Slime:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      Wolf:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      Spider:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      CaveSpider:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      Giant:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      Blaze:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      Silverfish:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      Enderman:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      EnderDragon:
+      - '&c%killed% &7has been slain by The &c%mob%'
+      WitherSkeleton:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      WitherBoss:
+      - '&c%killed% &7has been slain by a &c%mob%'
+      IronGolem:
+      - '&c%killed% &7has been slain by a &c%mob%'
+    Blocks:
+      Cactus:
+      - '&c%killed% &7was pricked by a &cCactus'
+      Tnt:
+      - '&c%killed% &7blew up'
+    Other:
+      Drown:
+      - '&c%killed% &7drowned'
+      Fall:
+      - '&c%killed% &7arvas,et on hea mõte kõrgelt alla hüpata'
+      Fire:
+      - '&c%killed% &7went up in flames'
+      Suffocation:
+      - '&c%killed% &7suffocated'
+      Void:
+      - '&c%killed% &7Fell into the Void'
+      Starvation:
+      - '&c%killed% &7Starved To Death'
+      Suicide:
+      - '&c%killed% &7Decided To End It All'
+      Potion:
+      - '&c%killed% &7was killed by magic'
+      Poison:
+      - '&c%killed% &7was poisoned to death!'
+      Lightening:
+      - '&c%killed% &7was struck by lightening!'
+      Lava:
+      - '&c%killed% &7tried to swim in lava'
+      Fire_Tick:
+      - '&c%killed% &7died from the burns of fire'
+      EnderPearl:
+      - '&c%killed% &7died from throwing an ender pearl'
+    UnknownReason: '%killed% Just Died... (Cause: %cause%)'
+Whitelist_Message: '&fKuradi omanik!Ta ei lisanud sind whitelisti.Täielik idioot.Onju?'
+Say_Prefix: '&d[StoneMain]'
+AutoUpdate: true
+UseNicknames: true
+AutoMessages:
+  Enabled: true
+  UseBarAPI: false
+  Interval: 20
+  Prefix: '&aStoneMain&0>'
+  NewLinePrefix: true
+  Messages:
+    global:
+      interval: 1200
+      use_permission: true
+      permission: LegendaryMessages.AutoMessages.global
+      list:
+      - '&aVajad abi? Tee "/helpop (teade)"'
+      - '&aÄra unusta meie foorumi külastada: http://stonemain.boards.net/'
+      - '&aTahad saada häid asju? Tee "/vote",hääleta!'
+      - '&aTahad saada meeskonda?Mine foorumi ja kandideeri!'
+    vip:
+      interval: 1800
+      use_permission: true
+      permission: LegendaryMessages.AutoMessages.vip
+      list:
+      - '&6Täname teid,et te toetasite meie serverit.'
+      - '&6Ära unusta foorumis endale kõrgemat ranki küsida!'
+      - '&6Vajad abi?Võta ühendust omanikuga foorumis!'
+      - '&6Tee endale foorumi kasutaja. http://stonemain.boards.net/'
