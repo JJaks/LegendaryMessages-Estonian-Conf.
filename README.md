@@ -1,4 +1,4 @@
-# LegendaryMessages-Estonian-Conf.
+# LegendaryMessages Estonian Conf.
 [LegendaryMessages](http://dev.bukkit.org/bukkit-plugins/joinmessages/) is an Minecraft plugin.
 
 Here are the LegendaryMessages conf files translated into Estonian.
