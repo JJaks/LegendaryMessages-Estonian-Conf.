@@ -17,10 +17,10 @@ MOTD:
   Message: '&6Tere tulemast StoneMain serveri!'
 New_Join_Message:
   Enabled: true
-  Message: '&aTere, %player_name% !/n&d%total_players% mängijat on liitunud serveriga.'
+  Message: '&aTere, %player_name% !/n&d%total_players% &amängijat on liitunud serveriga.'
 Returning_Join_Message:
   Enabled: true
-  Message: '&2Tere tulemast tagasi, %player_name%! &aIgatsesin sind. :)'
+  Message: '&aTere tulemast tagasi, &c%player_name%!'
 Quit_Message:
   Enabled: true
   Message: '&d%player_name% &clahkus!'
