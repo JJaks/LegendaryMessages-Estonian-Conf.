@@ -20,13 +20,13 @@ New_Join_Message:
   Message: '&aTere, %player_name% !/n&d%total_players% mängijat on liitunud serveriga.'
 Returning_Join_Message:
   Enabled: true
-  Message: '&2Tere tulemast tagasi, %player_name%!&aIgatsesin sind. :)'
+  Message: '&2Tere tulemast tagasi, %player_name%! &aIgatsesin sind. :)'
 Quit_Message:
   Enabled: true
-  Message: '&d%player_name% &cLahkus!'
+  Message: '&d%player_name% &clahkus!'
 Kick_Message:
   Enabled: false
-  Message: '&e%player_name% Lahkus'
+  Message: '&e%player_name% visati välja'
 Death_Message:
   Enabled: true
   Messages:
@@ -70,14 +70,14 @@ Death_Message:
       - '&c%killed% &7has been slain by a &c%mob%'
     Blocks:
       Cactus:
-      - '&c%killed% &7was pricked by a &cCactus'
+      - '&c%killed% &7suri läbi &cKaktuse'
       Tnt:
-      - '&c%killed% &7blew up'
+      - '&c%killed% &7lendas õhku'
     Other:
       Drown:
       - '&c%killed% &7drowned'
       Fall:
-      - '&c%killed% &7arvas,et on hea mõte kõrgelt alla hüpata'
+      - '&c%killed% &7arvas, et on hea mõte kõrgelt alla hüpata'
       Fire:
       - '&c%killed% &7went up in flames'
       Suffocation:
@@ -100,8 +100,8 @@ Death_Message:
       - '&c%killed% &7died from the burns of fire'
       EnderPearl:
       - '&c%killed% &7died from throwing an ender pearl'
-    UnknownReason: '%killed% Just Died... (Cause: %cause%)'
-Whitelist_Message: '&fKuradi omanik!Ta ei lisanud sind whitelisti.Täielik idioot.Onju?'
+    UnknownReason: '%killed% lihtsalt suri... (Põhjus: %cause%)'
+Whitelist_Message: '&fKuradi omanik! Ta ei lisanud sind whitelisti. Täielik idioot. Onju?'
 Say_Prefix: '&d[StoneMain]'
 AutoUpdate: true
 UseNicknames: true
@@ -120,13 +120,13 @@ AutoMessages:
       - '&aVajad abi? Tee "/helpop (teade)"'
       - '&aÄra unusta meie foorumi külastada: http://stonemain.boards.net/'
       - '&aTahad saada häid asju? Tee "/vote",hääleta!'
-      - '&aTahad saada meeskonda?Mine foorumi ja kandideeri!'
+      - '&aTahad saada meeskonda? Mine foorumi ja kandideeri!'
     vip:
       interval: 1800
       use_permission: true
       permission: LegendaryMessages.AutoMessages.vip
       list:
-      - '&6Täname teid,et te toetasite meie serverit.'
+      - '&6Täname teid, et te toetasite meie serverit.'
       - '&6Ära unusta foorumis endale kõrgemat ranki küsida!'
-      - '&6Vajad abi?Võta ühendust omanikuga foorumis!'
-      - '&6Tee endale foorumi kasutaja. http://stonemain.boards.net/'
+      - '&6Vajad abi? Võta ühendust omanikuga foorumis!'
+      - '&6Tee endale foorumi kasutaja: http://stonemain.boards.net/'
